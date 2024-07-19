@@ -5,7 +5,7 @@ using TelegramBotExtension.Handling;
 using TelegramBotExtension.Filters;
 using TG.Bot.TelegramApi.TestService.Views;
 using Telegram.Bot;
-using TG.Bot.enums;
+using TG.Bot.Enums;
 
 namespace TG.Bot.TelegramApi.TestService.Handlers;
 

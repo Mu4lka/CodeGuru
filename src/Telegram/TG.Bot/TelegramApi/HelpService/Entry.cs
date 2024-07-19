@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using TelegramBotExtension.Handling;
-using TG.Bot.TelegramApi.TestService.Handlers;
+using TG.Bot.TelegramApi.HelpService.Handlers;
 
 namespace TG.Bot.TelegramApi.HelpService;
 
@@ -9,7 +9,7 @@ internal static class Entry
     public static IServiceCollection ConfigureHelpService(this IServiceCollection services)
     {
         services
-            .AddTransient<IUpdateTypeHandler, TestsCommandHandler>();
+            .AddTransient<IUpdateTypeHandler, HelpCommandHandler>();
         return services;
     }
 }

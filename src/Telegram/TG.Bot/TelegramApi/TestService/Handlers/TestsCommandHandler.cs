@@ -3,7 +3,7 @@ using Telegram.Bot;
 using TelegramBotExtension.Filters;
 using TelegramBotExtension.Handling;
 using TelegramBotExtension.Types;
-using TG.Bot.enums;
+using TG.Bot.Enums;
 using TG.Bot.Intagrations.BackendApi;
 using TG.Bot.TelegramApi.TestService.Views;
 

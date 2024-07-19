@@ -1,4 +1,4 @@
-﻿namespace TG.Bot.enums;
+﻿namespace TG.Bot.Enums;
 
 enum TestState
 {

@@ -2,11 +2,11 @@
 using TelegramBotExtension.Filters;
 using TelegramBotExtension.Handling;
 using TelegramBotExtension.Types;
-using TG.Bot.enums;
+using TG.Bot.Enums;
 
 namespace TG.Bot.TelegramApi.AuthService.Handlers;
 
-internal class EnterNameMessageHandler : MessageHandler
+internal class EnteringNameMessageHandler : MessageHandler
 {
     [StateFilter(nameof(AuthState.Name))]
     public override async Task HandleUpdateAsync(TelegramContext context)

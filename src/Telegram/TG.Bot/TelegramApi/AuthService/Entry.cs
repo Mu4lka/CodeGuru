@@ -11,8 +11,8 @@ internal static class Entry
     {
         services
             .AddTransient<IUpdateTypeHandler, AuthCommandHandler>()
-            .AddTransient<IUpdateTypeHandler, EnterNameMessageHandler>()
-            .AddTransient<IUpdateTypeHandler, EnterPasswordMessageHandler>();
+            .AddTransient<IUpdateTypeHandler, EnteringNameMessageHandler>()
+            .AddTransient<IUpdateTypeHandler, EnteringPasswordMessageHandler>();
         return services;
     }
 }
