@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Api.Controllers;
 
-[Route("[Controller]")]
+[Route("api/[Controller]")]
 [ApiController]
 public class TestsController(ApplicationDbContext _context) : ControllerBase
 {
