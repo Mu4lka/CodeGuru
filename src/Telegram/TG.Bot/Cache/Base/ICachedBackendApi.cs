@@ -3,7 +3,7 @@ using Refit;
 
 namespace TG.Bot.CacheServices.Base;
 
-internal interface ICachedBackendApiService
+internal interface ICachedBackendApi
 {
     Task<IApiResponse<GetTelegramAccountBindingResponse>> GetTelegramAccountBindingAsync(long id);
 }

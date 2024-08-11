@@ -6,9 +6,9 @@ using TG.Bot.Intagrations.TestingPlatformApi;
 
 namespace TG.Bot.CacheServices;
 
-internal class CachedTestingPlatformApiService(
+internal class CachedTestingPlatformApi(
     ITestingPlatformApi _testingPlatformApi,
-    IMemoryCache _cache) : ICachedTestingPlatformApiService
+    IMemoryCache _cache) : ICachedTestingPlatformApi
 {
     public async Task<IApiResponse<ICollection<GetTestNameAndIdDto>>> GetTestNamesAndIdsAsync()
     {

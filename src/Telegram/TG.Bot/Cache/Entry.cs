@@ -9,8 +9,8 @@ internal static class Entry
     public static IServiceCollection AddCacheSrevices(this IServiceCollection services)
     {
         services
-            .AddTransient<ICachedBackendApiService, CachedBackendApiService>()
-            .AddTransient<ICachedTestingPlatformApiService, CachedTestingPlatformApiService>();
+            .AddTransient<ICachedBackendApi, CachedBackendApi>()
+            .AddTransient<ICachedTestingPlatformApi, CachedTestingPlatformApi>();
 
         return services;
     }

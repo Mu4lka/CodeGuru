@@ -13,8 +13,8 @@ namespace TG.Bot.TelegramApi.TestService.Handlers;
 /// </summary>
 /// <param name="_testingPlatformApi"></param>
 internal class TestsCommandHandler(
-    ICachedTestingPlatformApiService _testingPlatformApi,
-    ICachedBackendApiService _backendApi) : MessageHandler
+    ICachedTestingPlatformApi _testingPlatformApi,
+    ICachedBackendApi _backendApi) : MessageHandler
 {
     [Command("tests")]
     public override async Task HandleUpdateAsync(TelegramContext context)

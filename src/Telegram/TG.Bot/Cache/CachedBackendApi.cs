@@ -6,9 +6,9 @@ using TG.Bot.Intagrations.BackendApi;
 
 namespace TG.Bot.Common;
 
-internal class CachedBackendApiService(
+internal class CachedBackendApi(
     IBackendApi _backendApi,
-    IMemoryCache _cache) : ICachedBackendApiService
+    IMemoryCache _cache) : ICachedBackendApi
 {
     public async Task<IApiResponse<GetTelegramAccountBindingResponse>> GetTelegramAccountBindingAsync(long id)
     {
